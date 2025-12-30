@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 25% 97%;
+    --foreground: 220 30% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 30% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 30% 15%;
+
+    --primary: 220 50% 12%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 20% 94%;
+    --secondary-foreground: 220 50% 12%;
+
+    --muted: 220 15% 92%;
+    --muted-foreground: 220 15% 45%;
+
+    --accent: 190 90% 50%;
+    --accent-foreground: 220 50% 12%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 20% 88%;
+    --input: 220 20% 88%;
+    --ring: 190 90% 50%;
+
+    --radius: 0.5rem;
+
+    /* Brand gradient colors - cyan to indigo */
+    --gradient-start: 190 90% 50%;
+    --gradient-end: 240 60% 60%;
+    
+    /* Custom semantic tokens */
+    --cyan: 190 90% 50%;
+    --indigo: 240 60% 60%;
+    --dark-bg: 220 50% 8%;
+    --navy: 220 50% 12%;
+  }
+
+  .dark {
+    --background: 220 50% 6%;
+    --foreground: 0 0% 95%;
+
+    --card: 220 45% 10%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 220 45% 8%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 190 90% 50%;
+    --primary-foreground: 220 50% 6%;
+
+    --secondary: 220 45% 12%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 220 40% 15%;
+    --muted-foreground: 220 15% 65%;
+
+    --accent: 240 60% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 95%;
+
+    --border: 220 40% 18%;
+    --input: 220 40% 18%;
+    --ring: 190 90% 50%;
+
+    --gradient-start: 190 90% 50%;
+    --gradient-end: 240 60% 60%;
+    
+    --cyan: 190 90% 55%;
+    --indigo: 240 60% 65%;
+    --dark-bg: 220 50% 6%;
+    --navy: 220 50% 15%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-semibold;
+  }
+}
+
+@layer utilities {
+  .gradient-text {
+    @apply bg-gradient-to-r from-cyan to-indigo bg-clip-text text-transparent;
+  }
+  
+  .gradient-bg {
+    @apply bg-gradient-to-r from-cyan to-indigo;
+  }
+  
+  .gradient-bg-dark {
+    @apply bg-gradient-to-br from-dark-bg via-dark-bg to-indigo/20;
+  }
+}
+
+/* Floating animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes float-delayed {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float-delayed 5s ease-in-out infinite;
+  animation-delay: 1s;
+}
