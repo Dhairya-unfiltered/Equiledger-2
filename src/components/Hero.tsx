@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Shield, Award, Globe, Users, Star } from 'lucide-react';
+import { ArrowRight, Shield, Award, Globe, Users, Star, Flag,BadgeDollarSign, ShieldEllipsis,ChartNoAxesCombined} from 'lucide-react';
 
 const TYPEWRITER_WORDS = ['Control', 'Clarity', 'Confidence', 'Compliance'];
 
@@ -45,7 +45,7 @@ const Hero = () => {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border shadow-sm mb-8 animate-fade-in">
             <Shield className="w-4 h-4 text-cyan" />
             <span className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
-              Trusted by 500+ Global Enterprises
+              Trusted globally by our clients
             </span>
             <div className="flex -space-x-1">
               {[1, 2, 3].map((i) => (
@@ -69,7 +69,7 @@ const Hero = () => {
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed px-4">
             We empower high-growth firms with{' '}
             <span className="font-semibold text-foreground">audit-ready precision</span>{' '}
-            and borderless financial clarity across 40+ countries.
+            and borderless financial clarity across 9+ countries.
           </p>
 
           {/* CTAs */}
@@ -96,10 +96,10 @@ const Hero = () => {
 
           {/* Trust Indicators */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-3xl mx-auto px-4">
-            <TrustCard icon={Shield} label="SOC 2 Certified" />
-            <TrustCard icon={Award} label="Award Winning" />
-            <TrustCard icon={Users} label="500+ Clients" />
-            <TrustCard icon={Globe} label="40+ Countries" />
+            <TrustCard icon={ChartNoAxesCombined} label="Analyzing" />
+            <TrustCard icon={ShieldEllipsis} label="Auditing" />
+            <TrustCard icon={Flag} label="Reporting" />
+            <TrustCard icon={BadgeDollarSign} label="Controlling" />
           </div>
 
           {/* Social Proof */}
@@ -115,7 +115,7 @@ const Hero = () => {
                   ))}
                 </div>
                 <span className="text-sm text-muted-foreground ml-2">
-                  <span className="font-semibold text-foreground">4.9/5</span> from 200+ reviews
+                  <span className="font-semibold text-foreground">4.9/5</span> from 90+ reviews
                 </span>
               </div>
               <div className="flex items-center gap-1">

@@ -15,7 +15,7 @@ const Footer = () => {
           <div>
             <Logo size="lg" className="mb-4" />
             <p className="text-white/60 text-sm leading-relaxed">
-              Being the leading outsource bookkeeping service provider we know our roles & responsibility and Hence assure our clients that they will get quality services with precision.
+             At the heart of everything we do is a promise - to make accounting effortless and meaningful, so you can focus on what truly matters: growing your business.
             </p>
           </div>
 
@@ -43,12 +43,12 @@ const Footer = () => {
               Contact
             </h3>
             <div className="space-y-3 text-sm">
-              <p className="font-semibold text-white">USA Office</p>
+              <p className="font-semibold text-white">India Office</p>
               <p className="text-white/60">
-                4995, NW 72nd Ave, Suite – 307, Miami, FL 33166
+                Ahmedabad, Gujarat, India
               </p>
               <p className="text-white/60">
-                954-543-0681
+                +91 73835 03508
               </p>
             </div>
           </div>
