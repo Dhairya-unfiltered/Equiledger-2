@@ -57,10 +57,10 @@ const Contact = () => {
       <div className="container">
         <div className="max-w-xl mx-auto text-center">
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Want to continue the <span className="gradient-text">conversation</span>?
+            Want to <span className="gradient-text">connect with us</span>?
           </h2>
           <p className="text-muted-foreground mb-8">
-            Your company can be set up within days. We help with all the paperwork.
+            For any of your accounting need, drop a message. We typically respond within 24 hours.
           </p>
 
           <form onSubmit={handleSubmit} className="space-y-4">

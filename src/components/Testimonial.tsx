@@ -23,7 +23,7 @@ const Testimonial = () => {
               Prominent Outsource <span className="gradient-text">Bookkeeping Provider</span>
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              As a leading outsourced bookkeeping provider, we support clients globally with accurate books, insightful reports, and seamless compliance—combining technical expertise with strong business understanding to support growth.
+              As a prominent outsourced bookkeeping provider, we support clients globally with accurate books, insightful reports, and seamless compliance—combining technical expertise with strong business understanding to support growth.
             </p>
           </div>
         </div>

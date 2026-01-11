@@ -8,6 +8,24 @@ import restaurantsImage from '@/assets/industry-restaurants.jpg';
 import nonprofitImage from '@/assets/industry-nonprofit.jpg';
 
 const industries = [
+
+  {
+    title: 'Hospitality',
+    image: hospitalityImage,
+  },
+  {
+    title: 'Restaurants & Catering',
+    image: restaurantsImage,
+  },
+   {
+    title: 'Real Estate Industry',
+    image: realestateImage,
+  },
+    {
+    title: 'SaaS Companies',
+    image: saasImage,
+  },
+
   {
     title: 'Retail and E-commerce Industry',
     image: ecommerceImage,
@@ -16,25 +34,10 @@ const industries = [
     title: 'Cosmetics',
     image: cosmeticsImage,
   },
-  {
-    title: 'SaaS Companies',
-    image: saasImage,
-  },
-  {
-    title: 'Real Estate Industry',
-    image: realestateImage,
-  },
+
   {
     title: 'Clinics',
     image: clinicsImage,
-  },
-  {
-    title: 'Hospitality Industry',
-    image: hospitalityImage,
-  },
-  {
-    title: 'Restaurants, Cafés & Catering',
-    image: restaurantsImage,
   },
   {
     title: 'Non-Profit Organizations',
